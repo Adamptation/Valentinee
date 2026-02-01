@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine?</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff4d6d, #ff758f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .yes {
+      background: #fff;
+      color: #ff4d6d;
+      font-weight: bold;
+    }
+
+    .no {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>HEY MY DARLING SANDRA ❤️</h1>
+    <p>
+      Sooo… I was wondering 👉👈<br>
+      Will you be my Valentine and go on a date with me?
+    </p>
+
+    <button class="yes" onclick="yesClicked()">YES 💖</button>
+    <button class="no" onclick="noClicked()">NO 😢</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function yesClicked() {
+      document.getElementById("message").innerHTML =
+        "YAY 😍💘 YIPPEEEEE LOE YOUUUU SO MUCH I CANT WAIT TO TAKE YOU OUT.❤️";
+    }
+
+    function noClicked() {
+      document.getElementById("message").innerHTML =
+        "Wrong answer 😌 try again 💕";
+    }
+  </script>
+
+</body>
+</html>
